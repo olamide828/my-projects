@@ -2,6 +2,18 @@
     width: 40px;
 }
 
+.navbar-toggler {
+    background: none;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
 .form-input {
     border: 1px solid #ccc;
     padding: 20px;

@@ -42,20 +42,32 @@
 }
 
 .back-btn {
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: 18px;
-    border: none;
-    background: none;
-    background-color: indianred;
-    color: white;
-    transition: background-color 0.5s ease-in;
+    display: flex;
+    justify-content: center;
 }
 
-.back-btn:hover {
-    background-color: rgb(110, 63, 63);
-    color: black;
+.back-btn button a {
+    text-decoration: none;
+    color: white;
     cursor: pointer;
-    outline: 2px solid black;
 }
+
+.back-btn button a:hover {
+    color: blue;
+}
+
+.back-btn button {
+    background-color: indianred;
+    color: white;
+    border: none;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.back-btn button:hover {
+    background-color: rgb(129, 78, 78);
+    transition: 0.3s;
+}
+

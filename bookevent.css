@@ -1,0 +1,61 @@
+.logo {
+    width: 40px;
+}
+
+.form-input {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 15px;
+}
+
+.form-input input {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 40px;
+    padding-left: 12px;
+    margin-bottom: 12px;
+}
+
+.form-input input:focus {
+    outline: 2px solid green;
+}
+
+.submit-btn {
+    width: 35%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    background-color: green;
+    color: white;
+    transition: background-color 0.5s ease-in;
+}
+
+.submit-btn:hover {
+    background-color: rgb(60, 147, 60);
+    color: black;
+    cursor: pointer;
+}
+
+.back-btn {
+    width: 35%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    background-color: indianred;
+    color: white;
+    transition: background-color 0.5s ease-in;
+}
+
+.back-btn:hover {
+    background-color: rgb(110, 63, 63);
+    color: black;
+    cursor: pointer;
+    outline: 2px solid black;
+}

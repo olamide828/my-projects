@@ -25,7 +25,7 @@
     background-color: #007BFF;
     color: white;
     border: none;
-    width: 50%;
+    width: 20%;
     height: 50px;
     border-radius: 10px;
     font-size: 18px;
@@ -39,12 +39,14 @@
 footer {
     background-color: black;
     color: white;
+    margin: 0;
     padding: 12px 40px;
 }
 
 .footer {
     display: flex;
     gap: 10px;
+    margin: 0;
 }
 
 .footer li {
@@ -56,4 +58,81 @@ footer {
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+
+.footer li a:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration:  underline;
+}
+
+@media (max-width: 600px) {
+    .logo {
+    width: 40px;
+}
+
+.welcome-text {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+
+
+}
+
+.cta-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-btn button a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.cta-btn button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    width: 55%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.cta-btn button:hover {
+    background-color: #0056b3;
+    transition: 0.3s;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 12px 40px;
+}
+
+.footer {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+
+.footer li {
+    list-style: none;
+    color: white;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer li a:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration:  underline;
+}
+
 }

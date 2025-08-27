@@ -1,0 +1,42 @@
+ .logo {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background: none;
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+.cta-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.cta-btn button a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.cta-btn button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    width: 55%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.cta-btn button:hover {
+    background-color: #0056b3;
+    transition: 0.3s;
+
+}

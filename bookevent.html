@@ -73,11 +73,45 @@
         <div class="text-center mt-4">
         <button class="submit-btn"
         >Submit</button>
-        </div>
+        </div>        
     </form>
-            <div class="back-btn">
-        <button><a href="index.html">Home</a></button></a>
-         </div>
+
+  
+
+              <div class="back-btn">
+        <button id="bookBtn"
+        ><a href="index.html" target="_self" style="pointer-events: none;">     
+        <div class="spinner-grow spinner-grow-sm"
+        role="status" id="spinner" style="display: none;">
+        <span class="visually-hidden">Loading...
+        </span>
+        </div>
+        <span id="btnText">Home </span>
+         </a> 
+      </button>
+     </div>
+
+     <script>
+        const btn = document.getElementById('bookBtn')
+        const spinner = document.getElementById('spinner')
+        const btnText = document.getElementById('btnText')
+
+        btn.addEventListener('click', function(e) {
+          e.preventDefault()
+
+          spinner.style.display = 'inline-block'
+          btnText.style.display = 'none'
+          btn.disabled = true
+          setTimeout (() => {
+
+            window.open('index.html', '_self')
+            spinner.style.display = 'none'
+            btnText.style.display = 'inline'
+            btn.disabled = false
+          }, 1500)
+        })
+     </script>
+         
              <div class="container-fluid mt-5 mb-3">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

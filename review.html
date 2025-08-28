@@ -107,11 +107,39 @@
 
 <div class="m-4">
 <div class="cta-btn">
-        <button class="d-flex justify-content-center"><a href="bookevent.html" target="_blank">
-            Book Your Event Now
-        </a></button>
+        <button id="bookBtn"
+        ><a href="bookevent.html" target="_blank" style="pointer-events: none;">     
+        <div class="spinner-grow spinner-grow-sm"
+        role="status" id="spinner" style="display: none;">
+        <span class="visually-hidden">Loading...
+        </span>
+        </div>
+        <span id="btnText">Book Your Event Now </span>
+         </a> 
+      </button>
      </div>
-     </div>
+</div>
+
+     <script>
+        const btn = document.getElementById('bookBtn')
+        const spinner = document.getElementById('spinner')
+        const btnText = document.getElementById('btnText')
+
+        btn.addEventListener('click', function(e) {
+          e.preventDefault()
+
+          spinner.style.display = 'inline-block'
+          btnText.style.display = 'none'
+          btn.disabled = true
+          setTimeout (() => {
+
+            window.open('bookevent.html', '_blank')
+            spinner.style.display = 'none'
+            btnText.style.display = 'inline'
+            btn.disabled = false
+          }, 1500)
+        })
+     </script>
 
         <div class="container my-4">
             <footer>
